@@ -1,0 +1,11 @@
+# Compiled binary
+log-platform
+
+# OS-specific files
+.DS_Store
+
+# Environment files (good practice for the future)
+.env
+
+# VS Code settings
+.vscode/
