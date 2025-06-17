@@ -9,3 +9,8 @@ log-platform
 
 # VS Code settings
 .vscode/
+
+/bin.
+
+# Env files
+.env
