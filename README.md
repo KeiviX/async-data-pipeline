@@ -115,6 +115,6 @@ This project includes a comprehensive test suite to ensure code quality and syst
 #### Unit Tests
 Unit tests are located alongside the application code (e.g., `cmd/api/main_test.go`). They verify the logic of individual functions in isolation using Go's standard testing library and `net/http/httest`.
 
-To run all unit & integration tests in the project:
+To run all unit tests in the project:
 ```bash
 go test ./...
