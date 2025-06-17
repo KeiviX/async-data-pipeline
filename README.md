@@ -4,15 +4,6 @@ A high-throughput, scalable, and asynchronous data ingestion platform built with
 
 ---
 
-### Architecture Diagram
-
-*(This is the most impressive part of a README! Use a free tool like [draw.io](https://app.diagrams.net/) or [Excalidraw](https://excalidraw.com/) to create a simple diagram showing the flow, save it as an image in your project folder, and embed it here.)*
-
-![Architecture Diagram](./architecture.png)
-*Example Flow: HTTP Request -> API Service -> RabbitMQ -> Worker Service -> PostgreSQL Database. A separate Query Service with a Redis cache reads from the database.*
-
----
-
 ### Key Features
 
 * **Asynchronous Processing:** Ingests data via a lightweight API and processes it in the background using a message queue, ensuring no data is lost and the API remains highly responsive.
