@@ -102,6 +102,49 @@ graph TD
 
 ---
 
+### Infrastructure as Code
+
+This project uses Terraform to manage the infrastructure as code. The Terraform files are located in the `terraform` directory.
+
+**Prerequisites:**
+* Terraform (version 1.0+)
+* AWS Account and configured credentials
+
+1.  **Initialize Terraform:**
+    ```bash
+    cd terraform
+    terraform init
+    ```
+
+2.  **Plan the infrastructure:**
+    ```bash
+    terraform plan
+    ```
+
+3.  **Apply the infrastructure:**
+    ```bash
+    terraform apply
+    ```
+
+4.  **Destroy the infrastructure:**
+    ```bash
+    terraform destroy
+    ```
+
+---
+
+### CI/CD
+
+This project uses GitHub Actions for Continuous Integration. The workflow is defined in the `.github/workflows/ci.yml` file.
+
+On every push or pull request to the `main` branch, the following actions are performed:
+
+*   The code is checked out.
+*   The Go environment is set up.
+*   The unit tests are run.
+
+---
+
 ### Testing
 
 This project includes a comprehensive test suite to ensure code quality and system reliability.
