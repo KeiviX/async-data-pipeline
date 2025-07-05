@@ -65,17 +65,11 @@ graph TD
     ```
 
 3.  **Start Infrastructure Services:**
-    This project uses Docker to run PostgreSQL, RabbitMQ, and Redis. Ensure Docker Desktop is running.
+    This project uses Docker Compose to run PostgreSQL, RabbitMQ, and Redis. Ensure Docker Desktop is running.
     ```bash
-    # Command to start Postgres on port 5433
-    docker run -d -p 5433:5432 -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=mydatabase --name my-postgres -v postgres-data:/var/lib/postgresql/data postgres:16
-
-    # Command to start RabbitMQ
-    docker run -d -p 5672:5672 -p 15672:15672 --name my-rabbitmq rabbitmq:3-management
-
-    # Command to start Redis
-    docker run -d -p 6379:6379 --name my-redis redis:7
+    docker-compose up -d
     ```
+    This command will start all the services in the background.
 
 4.  **Connect to the Database & Create the Table:**
     Using a database client (DBeaver, Postico), connect to the PostgreSQL container on port `5433` and run the following SQL command:
